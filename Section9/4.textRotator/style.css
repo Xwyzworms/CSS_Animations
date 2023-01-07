@@ -1,0 +1,35 @@
+body {
+    height : 100vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+h1 {
+    color : white;
+    font-size : 50px;
+}
+
+span:before {
+    content : "Rubah";
+    text-transform: uppercase;
+    font-family: arial;
+    color : #1B1464;
+    transition : 0.5s;
+    animation : word-switch 5s infinite alternate;
+}
+
+@keyframes word-switch {
+    0% {
+        content : "Rubah";
+    }
+
+    50% {
+        content : "Pemberani";
+    }
+
+    100% {
+        content : "Dah itu aja";
+    }
+}
